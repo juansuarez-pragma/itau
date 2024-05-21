@@ -29,14 +29,7 @@ class _LoginPageState extends State<LoginPage> {
           child: ListView(
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             children: [
-              Slider.adaptive(
-                thumbColor: null,
-                overlayColor: const MaterialStatePropertyAll(Colors.white),
-                min: 0,
-                max: 3,
-                value: 1,
-                onChanged: (value) {},
-              ),
+              const LinearProgressIndicator(value: 0.35),
               const Text(
                 'Cuéntanos más de ti',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
